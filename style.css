@@ -1,0 +1,420 @@
+/* ============ google fonts ============*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ============== common css start =============== */
+#montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+.display {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+ol,
+ul,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+:root {
+    ---banner: rgba(223, 233, 244, 1);
+    ---p_color: #333333;
+    ---h_color: #054C73;
+    ---btn_color: #054C73;
+    ---p2_color: #666666;
+}
+
+/* ------------ common css end ------------- */
+/* =============== main_mane css part start ================ */
+.main_menu {
+    padding-top: 43px;
+    padding-bottom: 38px;
+}
+
+.main_menu ul {
+    gap: 73px;
+}
+
+.main_menu ul li a {
+    font-weight: 600;
+    color: rgba(51, 51, 51, 1);
+}
+
+.main_menu ul li:hover a {
+    scale: 1.2;
+    transition: all linear .06 !important;
+    color: orange !important;
+}
+
+/* ----------------- main_mane css part end ------------------- */
+/* ============ banner part start ============ */
+#banner {
+    padding-top: 155px;
+    padding-bottom: 151px;
+    background-image: url('./images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner_card {
+    display: flex;
+    justify-content: end;
+}
+
+.banner_main_card {
+    padding: 37px 58px 41px 39px;
+    width: 643px;
+    background-color: var(---banner);
+    border-radius: 10px;
+}
+
+.banner_main_card h2 {
+    font-weight: 600;
+    color: var(---p_color);
+    letter-spacing: 3px;
+}
+
+.banner_main_card h1 {
+    font-weight: 700;
+    font-size: 52px;
+    color: var(---h_color);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.banner_main_card p {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(---p_color);
+    margin-bottom: 30px;
+}
+
+.banner_main_card a {
+    font-weight: 700;
+    color: #fff;
+    padding: 25px 72px;
+    border-radius: 50px;
+    background-color: var(---btn_color);
+    transition: all linear 0.6s;
+}
+
+.banner_main_card a:hover {
+    background-color: #ecb650;
+    color: #000;
+}
+
+/* ----------- banner part end ----------- */
+/* ========== support part start ================*/
+#support {
+    background-color: #F2F5FF;
+    padding-top: 46px;
+    padding-bottom: 49px;
+}
+
+.support_row_card {
+    gap: 27px;
+}
+
+.support_row_card .support_text h2 {
+    font-weight: 600;
+    font-size: 24px;
+    color: var(---p_color);
+    margin-bottom: 6px;
+
+}
+
+.support_row_card .support_text p {
+    color: var(---p2_color);
+}
+
+/* -------------- support part start -------------- */
+/* <!-- ======== collation part start ============ */
+#collation {
+    padding-top: 60px;
+    padding-bottom: 66px;
+}
+
+.collation_text {
+    text-align: center;
+}
+
+.collation_text h2 {
+    font-size: 700;
+    font-size: 32px;
+    color: var(---p_color);
+}
+
+.collation_text p {
+    color: var(---p2_color);
+    margin-top: 20px;
+}
+
+.collation_card {
+    padding-top: 91px;
+    transition: ease-in .3s;
+}
+
+.collation_card:hover {
+    padding-top: 12px;
+}
+
+/* <!-- --------- collation part end ----------- --> */
+/* <!-- =========== Beautify part start =======--> */
+#beautify {
+    background-color: #F2F5FF;
+}
+
+.beautify_text {
+    width: 489px;
+    padding-top: 298px;
+    padding-bottom: 298px;
+}
+
+.beautify_text h2 {
+    font-weight: 700;
+    font-size: 32px;
+    color: var(---p_color);
+}
+
+.beautify_text p {
+    color: var(---p2_color);
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.beautify_text button {
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    padding: 24px 57px;
+    background-color: var(---btn_color);
+    transition: ease-in .3s;
+    border: none;
+    border-radius: 50px;
+}
+
+.beautify_text button:hover {
+    background-color: orange;
+}
+
+.deautify_col_img {
+    justify-content: end;
+    padding-top: 55px;
+    padding-bottom: 65px;
+}
+
+/* <!-- =========== Beautify part start =======--> */
+/* ============== browse range part start =================== */
+#range {
+    padding-top: 55px;
+    padding-bottom: 120px;
+}
+
+.range_text {
+    text-align: center;
+}
+
+.range_text h2 {
+    font-weight: 700;
+    font-size: 32px;
+    color: var(---p_color);
+}
+
+.range_text p {
+    color: var(---p2_color);
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.range_card h2 {
+    font-weight: 600;
+    font-size: 24px;
+    color: var(---p_color);
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* ---------------- browse range part start ------------- */
+/* ============= works part start =========== */
+#works {
+    padding-bottom: 150px;
+}
+
+.common_head {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.common_head h2 {
+    font-weight: 700;
+    font-size: 32px;
+    color: var(---p_color);
+}
+
+.common_head p {
+    font-size: 20px;
+    margin-top: 20px;
+    color: var(---p2_color);
+}
+
+.works_img {
+    margin-bottom: 75px;
+    position: relative;
+}
+
+.works_img span {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    padding: 16px 21px;
+    position: absolute;
+    font-size: 24px;
+    left: 30%;
+    transform: translateX(50%);
+    bottom: -32px;
+    color: #FFF;
+    outline: 15px solid #fff;
+}
+
+.work_text {
+    width: 341px;
+    text-align: center;
+}
+
+.work_text h2 {
+    font-weight: 700;
+    font-size: 24px;
+    color: var(---p_color);
+}
+
+.work_text p {
+    color: var(---p2_color);
+    margin-top: 10px;
+}
+
+/* ------------- works part end */
+/* ============= join our part start =========== */
+#join_our {
+    padding-bottom: 61px;
+}
+
+.join_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.join_text h2 {
+    font-weight: 700;
+    font-size: 32px;
+    color: var(---p_color);
+}
+
+.join_text p {
+    text-align: center;
+    width: 514px;
+    font-size: 20px;
+    color: var(---p2_color);
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.input_flid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input_flid {
+    width: 486px;
+    height: 70px;
+    border: 1px solid #054C73;
+    border-radius: 3px;
+}
+
+.input_flid button {
+    width: 153px;
+    height: 68px;
+    font-weight: 700;
+    padding: 27px 45px;
+    background-color: #054C73;
+    color: #fff;
+    border-radius: 3px;
+    border: 1px solid #011C42;
+    transition: all linear 0.6s;
+}
+
+.input_flid button:hover {
+    background-color: #e7ab3a;
+}
+
+.input_flid input {
+    border: none;
+    padding: 25px 0px 25px 25px;
+    border-radius: 3px;
+}
+
+/* ------------- join our part end */
+/* ============= footer part start =========== */
+#footer {
+    background-color: #03344F;
+    padding: 50px 134px 90px 120px;
+}
+
+.footer_text h2 {
+    font-weight: 700;
+   width: 154px;
+    font-size: 24px;
+    color: #fff;
+}
+
+.footer_text p {
+    width: 400px;
+    margin-top: 34px;
+    margin-bottom: 21px;
+    color: #FFF;
+}
+
+.footer2_text h2 {
+    width: 200px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+}
+
+.footer_img {
+    margin-top: 34px;
+    display: flex;
+    gap: 21px;
+}
+
+/* ------------- footer part end */
